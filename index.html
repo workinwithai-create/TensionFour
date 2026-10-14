@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TensionFour — four-bar tension-hold desk</title>
+  <meta name="description" content="Four live-instrument bars that hold a pedal while harmony moves above it, then release." />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+<main>
+  <p class="eyebrow">WorkinWithAI · live chairs</p>
+  <h1>TensionFour</h1>
+  <p class="lead">Four-bar tension-hold desk. AI tools slam sections together. Session players hold a bass pedal while the harmony moves above it for four bars, then release into the next section. Live piano, upright, nylon, kit, trumpet, violin. Not a climb. Not a tag. Not a key change.</p>
+  <p class="status" id="status">Seating chairs…</p>
+  <p class="eyebrow">Groove</p>
+  <div class="row" id="grooves"></div>
+  <p class="eyebrow">Hold</p>
+  <div class="row" id="recipes"></div>
+  <p class="eyebrow">Form · pocket 1–4 · hold 5–8 · release 9–10</p>
+  <div class="bars" id="bars"></div>
+  <h2>Punch list</h2>
+  <pre id="punch"></pre>
+  <label>BPM <input id="bpm" type="number" min="60" max="180" value="92" /></label>
+  <label>Key <select id="key"><option>A minor</option><option>C major</option><option>E minor</option></select></label>
+  <button id="exportWav">Export WAV</button>
+  <button id="exportMid">Export MIDI</button>
+</main>
+<div class="dock">
+  <button id="playA">A · Pocket loop</button>
+  <button id="playB">B · Full form</button>
+  <button id="play8">8 · Hold + release</button>
+  <button class="ghost" id="stop">Stop</button>
+  <button class="ghost" id="copy">Copy punch</button>
+</div>
+<p class="note">Tap to start audio. On iOS the silent switch mutes Web Audio. Hardware MIDI keyboard supported.</p>
+<script type="module" src="./app.js"></script>
+</body>
+</html>
