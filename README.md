@@ -25,8 +25,22 @@ Yesterday's ship was the previous arrangement desk. TensionFour is the missing h
 
 ## Pricing recommendation
 
-One-time **$29** on Lemon Squeezy (mirror on Gumroad).  
+One-time **$29** on Lemon Squeezy (mirror on Gumroad) for a future gated build.  
 Do not subscribe. Forge Pass stays the recurring cloud bundle. This is a finite desk.
+
+**Current app is free.** No license gate. MIT. A priced build would need a Lemon Squeezy or Gumroad key check.
+
+## Samples
+
+Pinned commit SHAs only. Never @main or @gh-pages.
+
+## Export
+
+Default bounce is 48 kHz, 24-bit stereo.
+
+At 92 BPM and 8 bars the loop file is exactly 1,001,739 samples (`Math.round(8 * 4 * 60 / 92 * 48000)`), first downbeat at sample 0. Tail folded for seamless loop. Peak ≤ −1 dBFS.
+
+Filenames: `tensionfour-recipe-<bpm>bpm-<key>.wav` and matching `.mid`.
 
 ## License
 
